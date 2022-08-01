@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+   
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    z-index: 100;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.area-logo img {
+    width: 150px;
+    margin-top: 15px;
+}
+
+.menu {
+    margin-right: 10%;
+    float: right;
+}
+
+.menu nav {
+    margin-top: 1%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+}
+nav {
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: blue;
+    height: 48px;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    height: 33px;
+    display: inline-block;
+    text-align: center;
+} 
+
+.menu li:hover {
+    background-color: darkblue;
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+
+.sub-menu{
+    position: absolute;
+    display: none;
+    background-color: blue;
+    z-index: 1;
+}
+
+.menu li:hover>ul {
+    display: block;
+    width: 150px;
+}
+
+.menu ul li:hover>ul {
+    display: block;
+    width: 150px;
+    margin-left: 150px;
+    margin-top: -48px;
+}
+
+form {
+    border: 1px solid aquamarine;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+form input, form button {
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+}
+form button {
+    cursor: pointer;
+    background: none;
+    color: aquamarine;
+}
+form button:hover {
+    background-color: aquamarine;
+    color: blue;
+}
+
+
+section {
+    margin: 0 auto;
+}
+
+/* Pagina Inicial */
+
+.games {
+    width: 80%;
+    height: 350px;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.games .game{
+    width: 200px;
+    height: 400px;
+}
+
+.games .game img{
+    width: 100%;
+}
+
+.Produtos .PS5,
+.Produtos .DUALSENSE,
+.Produtos .Ratochato,
+.Produtos .Returnal,
+.Produtos .GowRag,
+.Produtos .Tlou1,
+.Produtos .Saintsrow,
+.Produtos .TheQuarry {
+    color: blue;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    font-size: 15px;
+}
+
+
+.Produtos h1 {
+    color: darkblue;
+    padding: 30px;
+    /* left: 100px; */
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    padding: 90px;
+}
+.game {
+    position: relative;
+}
+
+.game p {
+    color: darkblue;
+}
+.game a {
+    color: darkblue;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Pagina Login */
+
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    left: 550px;
+    position: center;
+    margin: 0 auto;
+}
+.login {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login input {
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+.login img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    font-size: 14px;
+
+}
+form [type="submit"] {
+    background-color: darkblue;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login p {
+    color: white;
+}
+.login a {
+    color: aquamarine;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Pagina Cadastro */
+
+.area-cadastro {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    left: 550px;
+    position: center;
+}
+.cadastro {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 435px;
+    padding: 35px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.cadastro form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cadastro input {
+    margin-top: 10px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+}
+.cadastro img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    font-size: 14px;
+
+}
+form [type="submit"] {
+    background-color: darkblue;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Produtos Pag. Inicial */
+
+.games {
+    width: 80%;
+    height: 350px;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.games .game{
+    width: 200px;
+    height: 400px;
+}
+
+.games .game img{
+    width: 100%;
+}
+
+.Produtos .PS5,
+.Produtos .DUALSENSE,
+.Produtos .Ratochato,
+.Produtos .Returnal,
+.Produtos .GowRag,
+.Produtos .Tlou1,
+.Produtos .Saintsrow,
+.Produtos .TheQuarry {
+    color: blue;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    font-size: 15px;
+}
+
+
+.Produtos h1 {
+    color: blue;
+    padding: 30px;
+    /* left: 100px; */
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    padding: 90px;
+}
+.game {
+    position: relative;
+}
+
+/* Pagina Quem somos */
+
+.texto-section 
+
+.whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url("whatsapp3.img");
+    background-size: contain;
+    z-index: 1;
+}
+
+.texto-footer{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+ footer{
+    background:darkblue;
+    width: 100%;
+    height: 50px;
+    position: static;
+    bottom: 0;
+    left: 0;
+ }
